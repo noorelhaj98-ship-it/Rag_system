@@ -1,0 +1,28 @@
+# ─── API Framework ────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+slowapi>=0.1.9
+
+# ─── Data Validation & Settings ───────────────────────────────────────
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# ─── Vector Store ─────────────────────────────────────────────────────
+qdrant-client>=1.9.0
+
+# ─── Document Parsing ─────────────────────────────────────────────────
+pymupdf>=1.24.0          # PDF extraction (import fitz)
+python-docx>=1.1.0       # DOCX extraction
+
+# ─── Reranker (optional — falls back to keyword scoring without it) ───
+sentence-transformers>=2.7.0
+
+# ─── HTTP & Environment ───────────────────────────────────────────────
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# ─── Config / Prompts ─────────────────────────────────────────────────
+pyyaml>=6.0.1
+
+# ─── Observability ────────────────────────────────────────────────────
+logfire>=0.30.0
